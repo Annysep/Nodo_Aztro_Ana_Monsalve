@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mi primer Formulario</title>
+</head>
+<body>
+    <h1>Formulario de Inscripción</h1>
+    <form>
+       <fieldset>
+            <legend>Datos Personales</legend>
+            <div>
+                <label for="Nombre">Nombre</label>
+                <input type="text" id="Nombre" name="Nombre" required>
+            </div>
+            <div>
+                <label for="Apelllido">Apellido</label>
+                <input type="Apellido" id="Apellido" name="Apellido" required>
+            </div>
+            <div>
+                <label for="Correo">Correo</label>
+                <input type="Correo" id="Correo" name="Correo" required>
+            </div>             
+            <div>
+                <label for="Dirección">Dirección</label>
+                <input type="Dirección" name="Dirección" id="Dirección">
+            </div>     
+            <div>
+                <label for="Departamento">Departamento</label>
+                <input type="Departamento" name="Departamento" id="Departamento"> 
+            </div>   
+            <div>
+                <label for="País">País</label>
+                <input type="País" name="País" id="País" required>
+            </div>  
+            <div>
+                <label for="Teléfono de contacto">Teléfono de contacto</label>
+                <input type="Teléfono de contacto" name="Teléfono de contacto" id="Teléfono de contacto">
+            </div>  
+            <div>
+                <label for="Descripción personal">Descripción personal</label>
+                <input type="Descripción personal" maxlength="300" name="Descripción personal" id="Descripción personal">
+            </div>      
+            
+        </fieldset>
+        <fieldset>
+            <legend>Datos de Inscripción</legend>
+            <p>¿A qué carrera deseas inscribirte?</p>
+            
+            <select name="" id="Carrera">
+                <option value="">Jobs To Be Done</option>
+                <option value="">Cloud Native</option>
+                <option value="">Frontend</option>
+                <option value="">Backend</option>
+                <option value="">Fundamentals</option>
+                <option value="">Phyton</option>
+                <option value="">Marketing Digital</option>
+            </select>
+            
+            <p>Modalidad</p>
+            <select name="" id="Modalidad">
+                <option value="">Presencial</option>
+                <option value="">Virtual</option>
+            </select>
+
+            <p>¿Estás trabajando actualmente?</p>
+            <select name="" id="">
+                <option value="">Sí</option>
+                <option value="">No</option>
+            </select>
+        </fieldset>
+          
+        <button>Enviar</button>
+        <button>Restablecer</button>
+
+    </form>
+</body>
+</html>
