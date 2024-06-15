@@ -1,0 +1,9 @@
+:root {
+    --text-font-family:'Inter variable', sans-serif;
+    --title-font-family:'Poppins', sans-serif;
+    --text-size-normal: 1rem;
+    --text-size-large: 2rem;
+    --main-color: #8BD08C;
+    --secondary-color: #060E06;
+    --accent-color: #449C44;
+}
