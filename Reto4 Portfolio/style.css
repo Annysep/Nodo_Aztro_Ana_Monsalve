@@ -1,16 +1,19 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 3;
+    padding: 8;
     box-sizing: border-box;
+    justify-content: center;
 }
 
 body {
     font-family: var(--text-font-family);
     font-size: var(--text-size-normal);
-}
+    background-color: rgb(246, 230, 206);
+    }
 
-h1,h2,h3,h4,h5,h6 {
+h1 {
     font-family: var(--title-font-family);
+    text-align: center;
 }
 
 h1 {
@@ -26,7 +29,7 @@ header {
     background-color: var(--main-color);
     border-radius: 0.2rem;
     color: var(--secondary-color);
-    
+                
     & > a {
         text-decoration: none;
         color: var(--secondary-color);
@@ -38,11 +41,15 @@ header {
 
     &[active] {
         background-color: var(--accent-color);
-}
+    }
 }
     
 .navigation-item:hover {
     background-color: var(--accent-color);
     cursor: pointer;
 }
+
+
+
+
 
