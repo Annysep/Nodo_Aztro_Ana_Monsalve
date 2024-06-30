@@ -1,77 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Mi primer Formulario</title>
 </head>
 <body>
     <h1>Formulario de Inscripción</h1>
     <form>
-       <fieldset>
+        <fieldset>
             <legend>Datos Personales</legend>
             <div>
                 <label for="Nombre">Nombre</label>
                 <input type="text" id="Nombre" name="Nombre" required>
             </div>
             <div>
-                <label for="Apelllido">Apellido</label>
-                <input type="Apellido" id="Apellido" name="Apellido" required>
+                <label for="Apellido">Apellido</label>
+                <input type="text" id="Apellido" name="Apellido" required>
             </div>
             <div>
                 <label for="Correo">Correo</label>
-                <input type="Correo" id="Correo" name="Correo" required>
-            </div>             
+                <input type="email" id="Correo" name="Correo" required>
+            </div>
             <div>
-                <label for="Dirección">Dirección</label>
-                <input type="Dirección" name="Dirección" id="Dirección">
-            </div>     
+                <label for="Direccion">Dirección</label>
+                <input type="text" id="Direccion" name="Direccion">
+            </div>
             <div>
                 <label for="Departamento">Departamento</label>
-                <input type="Departamento" name="Departamento" id="Departamento"> 
-            </div>   
+                <input type="text" id="Departamento" name="Departamento">
+            </div>
             <div>
-                <label for="País">País</label>
-                <input type="País" name="País" id="País" required>
-            </div>  
+                <label for="Pais">País</label>
+                <input type="text" id="Pais" name="Pais" required>
+            </div>
             <div>
-                <label for="Teléfono de contacto">Teléfono de contacto</label>
-                <input type="Teléfono de contacto" name="Teléfono de contacto" id="Teléfono de contacto">
-            </div>  
+                <label for="Telefono">Teléfono de contacto</label>
+                <input type="tel" id="Telefono" name="Telefono">
+            </div>
             <div>
-                <label for="Descripción personal">Descripción personal</label>
-                <input type="Descripción personal" maxlength="300" name="Descripción personal" id="Descripción personal">
-            </div>      
-            
+                <label for="Descripcion">Descripción personal</label>
+                <textarea id="Descripcion" name="Descripcion" maxlength="300"></textarea>
+            </div>
         </fieldset>
         <fieldset>
             <legend>Datos de Inscripción</legend>
-            <p>¿A qué carrera deseas inscribirte?</p>
-            
-            <select name="" id="Carrera">
-                <option value="">Jobs To Be Done</option>
-                <option value="">Cloud Native</option>
-                <option value="">Frontend</option>
-                <option value="">Backend</option>
-                <option value="">Fundamentals</option>
-                <option value="">Phyton</option>
-                <option value="">Marketing Digital</option>
-            </select>
-            
-            <p>Modalidad</p>
-            <select name="" id="Modalidad">
-                <option value="">Presencial</option>
-                <option value="">Virtual</option>
-            </select>
-
-            <p>¿Estás trabajando actualmente?</p>
-            <select name="" id="">
-                <option value="">Sí</option>
-                <option value="">No</option>
-            </select>
+            <div>
+                <label for="Carrera">¿A qué carrera deseas inscribirte?</label>
+                <select id="Carrera" name="Carrera">
+                    <option value="Jobs To Be Done">Jobs To Be Done</option>
+                    <option value="Cloud Native">Cloud Native</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="Fundamentals">Fundamentals</option>
+                    <option value="Python">Python</option>
+                    <option value="Marketing Digital">Marketing Digital</option>
+                </select>
+            </div>
+            <div>
+                <label for="Modalidad">Modalidad</label>
+                <select id="Modalidad" name="Modalidad">
+                    <option value="Presencial">Presencial</option>
+                    <option value="Virtual">Virtual</option>
+                </select>
+            </div>
+            <div>
+                <label for="Trabajando">¿Estás trabajando actualmente?</label>
+                <select id="Trabajando" name="Trabajando">
+                    <option value="Si">Sí</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
         </fieldset>
-          
-        <button>Enviar</button>
-        <button>Restablecer</button>
-
+        <button type="submit">Enviar</button>
+        <button type="reset">Restablecer</button>
     </form>
 </body>
 </html>
