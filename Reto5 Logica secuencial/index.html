@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lógica Secuencial</title>
+</head>
+<body>
+  <h1>Lógica Secuencial</h1>  
+
+  <h2>Calculadora Rectángulo</h2>
+  <div class="container">
+      <img src="/Reto5 Logica secuencial/img/rectangulo.jpg" alt="rectangulo" width="150" height="120">  
+      <div class="container-rectangulo">
+          <label for="base">Base en centímetros</label> 
+          <input type="number" name="base" id="base" placeholder="Ingresar valor">
+          <br>
+          <label for="altura">Altura en centímetros</label>
+          <input type="number"name="altura" id="altura" placeholder="Ingresar valor">
+          <br>
+          <button type="submit" onclick="calcularRectangulo()">Calcular</button>
+          <h3>Resultados</h3>
+          <label for="areaRectangulo">Área:</label>
+          <input type="text" id="areaRectangulo" readonly>
+          <label for="perimetroRectangulo">Perímetro:</label>
+          <input type="text" id="perimetroRectangulo" readonly>
+          <label for="diagonalRectangulo">Diagonal:</label>
+          <input type="text" id="diagonalRectangulo" readonly>
+      </div>
+  </div>
+
+    <h2>Calculadora Círculo</h2>
+    <div class="container-circulo">
+      <label for="diametro">Ingresar el diámetro</label>
+      <input type="number" name="diametro" id="diametro" placeholder="Ingresar valor">
+      <br>
+      <button type="submit" onclick="calcularCirculo()">Calcular</button>
+      <h3>Resultados</h4>
+      <label for="areaCirculo">Área:</label>
+      <input type="text" id="areaCirculo" readonly>
+      <label for="AreaCirculo">Perímetro:</label>
+      <input type="text" id="perimetroCirculo" readonly>
+    </div>
+    
+  <script src="/Reto5 Logica secuencial/logica.js"></script>
+</body>
+</html>
