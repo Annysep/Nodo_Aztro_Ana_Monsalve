@@ -1,36 +1,39 @@
-// Rectangulo
-let altura  = 0
-let base = 0
 
-let area = 0
-let perimetro = 0
-let diagonal = 0
+// Calculadora rectángulo
+function calcularRectangulo() {
+    const base = parseFloat(document.getElementById('base').value);
+    const altura = parseFloat(document.getElementById('altura').value);
 
-area = base * altura
-perimetro = 2 * base + 2 * altura
-diagonal = Math.sqrt(base * base + altura * altura)
+    if (isNaN(base) || isNaN(altura)) {
+        alert("Por favor, ingresa valores válidos para base y altura.");
+        return;
+    }
 
-console.log(area); 
-console.log(perimetro); 
-console.log(diagonal); 
+    const area = base * altura;
+    const perimetro = 2 * (base + altura);
+    const diagonal = Math.sqrt(base * base + altura * altura);
 
-// Circulo
+    document.getElementById('areaRectangulo').value = area.toFixed(2);
+    document.getElementById('perimetroRectangulo').value = perimetro.toFixed(2);
+    document.getElementById('diagonalRectangulo').value = diagonal.toFixed(2);
+}
 
-const Pi = 3.14159;
-let diametro = 10
-let radio = 0
+// Calcular círculo
+function calcularCirculo() {
+    const diametro = parseFloat(document.getElementById('diametro').value);
 
-let area2 = 0
-let perimetro2 = 0
+    if (isNaN(diametro)) {
+        alert("Por favor, ingresa un valor válido para el diámetro.");
+        return;
+    }
 
-radio = diametro / 2
+    const radio = diametro / 2;
+    const area = Math.PI * radio * radio;
+    const perimetro = 2 * Math.PI * radio;
 
-area2 = Pi * radio * radio
-perimetro2 = 2 * Pi * radio
-
-console.log(radio)
-console.log(area2)
-console.log(perimetro2)
+    document.getElementById('areaCirculo').value = area.toFixed(2);
+    document.getElementById('perimetroCirculo').value = perimetro.toFixed(2);
+}
 
 
 
