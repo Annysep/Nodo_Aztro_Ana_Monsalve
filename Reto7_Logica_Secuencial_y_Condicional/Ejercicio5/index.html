@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Liquidación de Empleado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Liquidación de Empleado</h1>
+    
+    <form id="formularioLiquidacion">
+        <label for="diasTrabajados">Días Trabajados:</label>
+        <input type="number" id="diasTrabajados" name="diasTrabajados" required>
+        
+        <label for="horasExtrasDiurnas">Horas Extras Diurnas:</label>
+        <input type="number" id="horasExtrasDiurnas" name="horasExtrasDiurnas" required>
+        
+        <label for="horasExtrasNocturnas">Horas Extras Nocturnas:</label>
+        <input type="number" id="horasExtrasNocturnas" name="horasExtrasNocturnas" required>
+        
+        <label for="horasExtrasFestivos">Horas Extras Festivos:</label>
+        <input type="number" id="horasExtrasFestivos" name="horasExtrasFestivos" required>
+        
+        <button type="button" onclick="calcularLiquidacion()">Calcular</button>
+    </form>
+
+    <div id="resultados" style="display: none;">
+        <h2>Resultados de Liquidación</h2>
+        
+        <table>
+            <tr>
+                <th>Concepto</th>
+                <th>Monto</th>
+            </tr>
+            <tr>
+                <td>Salario Base</td>
+                <td id="salarioBase"></td>
+            </tr>
+            <tr>
+                <td>Valor Horas Extras Diurnas</td>
+                <td id="valorHorasExtrasDiurnas"></td>
+            </tr>
+            <tr>
+                <td>Valor Horas Extras Nocturnas</td>
+                <td id="valorHorasExtrasNocturnas"></td>
+            </tr>
+            <tr>
+                <td>Valor Horas Extras Festivos</td>
+                <td id="valorHorasExtrasFestivos"></td>
+            </tr>
+            <tr>
+                <td>Total Devengado</td>
+                <td id="totalDevengado"></td>
+            </tr>
+            <tr>
+                <td>Total Descuento Salud 4%</td>
+                <td id="totalDescuentoSalud"></td>
+            </tr>
+            <tr>
+                <td>Total Descuento Pensión 4%</td>
+                <td id="totalDescuentoPension"></td>
+            </tr>
+            <tr>
+                <td>Total Deducible Alimentación 3%</td>
+                <td id="totalDeducibleAlimentacion"></td>
+            </tr>
+            <tr>
+                <td>Total Deducciones</td>
+                <td id="totalDeducciones"></td>
+            </tr>
+            <tr>
+                <td>Salario Neto</td>
+                <td id="salarioNeto"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="/Reto7_Logica_Secuencial_y_Condicional/Ejercicio5/logica.js"></script>
+</body>
+</html>

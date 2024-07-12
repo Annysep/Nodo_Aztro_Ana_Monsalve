@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ladrillos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de Ladrillos</h1>
+    <div class="calculator-container">
+            <form id="brickCalculator">
+            <label for="wallLength">Longitud del muro (metros):</label>
+            <input type="number" id="wallLength" required>
+            <label for="wallHeight">Altura del muro (metros):</label>
+            <input type="number" id="wallHeight" required>
+            <button type="button" onclick="calculateBricks()">Calcular</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="/Reto7_Logica_Secuencial_y_Condicional/Ejercicio3/logica.js"></script>
+</body>
+</html>
