@@ -203,24 +203,41 @@ main{
         border-radius: 10px;
     }
 
+    h2{
+        margin: 10px;
+        width: 100%;
+        height: 60%;
+    }
     .galeria__foto--1 {
         grid-column: 2/1;
         grid-row: 2/4;
+        margin: 10px;
+        width: 100%;
+        height: 110%;
     }
 
     .galeria__foto--2 {
         grid-column: 2/4;
         grid-row: 2/3;
+        padding: 1%;
+        width: 100%;
+        height: 120%;
     }
 
     .galeria__foto--3 {
         grid-column: 2/2;
         grid-row: 3/3;
+        padding: 1%;
+        width: 100%;
+        height: 120%;
     }
 
     .galeria__foto--4 {
         grid-column: 3/3;
         grid-row: 3/3;
+        padding: 1%;
+        width: 100%;
+        height: 120%;
     }
 }
 
